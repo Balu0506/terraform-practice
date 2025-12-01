@@ -1,0 +1,17 @@
+{
+  "name": "Terraform + AWS CLI Dev",
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
+  "features": {
+    "terraform": "latest",
+    "aws-cli": "latest"
+  },
+  "postCreateCommand": "terraform -version && aws --version",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "hashicorp.terraform",
+        "amazonwebservices.aws-toolkit-vscode"
+      ]
+    }
+  }
+}
